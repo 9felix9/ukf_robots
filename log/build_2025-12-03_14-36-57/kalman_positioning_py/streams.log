@@ -1,0 +1,10 @@
+[1.411s] Invoking command in '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py': PYTHONPATH=/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/build --no-deps symlink_data
+[1.941s] running develop
+[2.265s] running egg_info
+[2.294s] writing kalman_positioning_py.egg-info/PKG-INFO
+[2.294s] writing dependency_links to kalman_positioning_py.egg-info/dependency_links.txt
+[2.295s] writing entry points to kalman_positioning_py.egg-info/entry_points.txt
+[2.295s] writing requirements to kalman_positioning_py.egg-info/requires.txt
+[2.295s] writing top-level names to kalman_positioning_py.egg-info/top_level.txt
+[2.341s] error: package directory 'kalman_positioning_py' does not exist
+[2.394s] Invoked command in '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py' returned '1': PYTHONPATH=/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/build --no-deps symlink_data

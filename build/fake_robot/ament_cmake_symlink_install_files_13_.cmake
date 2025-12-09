@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/felix/Schreibtisch/projects/ros2_homework_1/src/fake_robot" FILES "/home/felix/Schreibtisch/projects/ros2_homework_1/src/fake_robot/package.xml" "DESTINATION" "share/fake_robot")

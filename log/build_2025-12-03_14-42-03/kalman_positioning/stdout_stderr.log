@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/kalman_positioning/kalman_positioning.egg-info
+writing ../../build/kalman_positioning/kalman_positioning.egg-info/PKG-INFO
+writing dependency_links to ../../build/kalman_positioning/kalman_positioning.egg-info/dependency_links.txt
+writing entry points to ../../build/kalman_positioning/kalman_positioning.egg-info/entry_points.txt
+writing requirements to ../../build/kalman_positioning/kalman_positioning.egg-info/requires.txt
+writing top-level names to ../../build/kalman_positioning/kalman_positioning.egg-info/top_level.txt
+writing manifest file '../../build/kalman_positioning/kalman_positioning.egg-info/SOURCES.txt'
+reading manifest file '../../build/kalman_positioning/kalman_positioning.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/kalman_positioning/kalman_positioning.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build
+creating /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib
+creating /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+copying kalman_positioning/landmark_manager.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+copying kalman_positioning/__init__.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+copying kalman_positioning/ukf.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+copying kalman_positioning/positioning_node.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+running install
+running install_lib
+creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+copying /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning/landmark_manager.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+copying /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning/__init__.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+copying /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning/ukf.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+copying /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning/positioning_node.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+byte-compiling /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning/landmark_manager.py to landmark_manager.cpython-312.pyc
+byte-compiling /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning/ukf.py to ukf.cpython-312.pyc
+byte-compiling /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning/positioning_node.py to positioning_node.cpython-312.pyc
+running install_data
+running install_egg_info
+Copying ../../build/kalman_positioning/kalman_positioning.egg-info to /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning-0.0.0-py3.12.egg-info
+running install_scripts
+Installing positioning_node script to /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/kalman_positioning
+writing list of installed files to '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/install.log'

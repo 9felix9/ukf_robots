@@ -1,0 +1,39 @@
+[1.469s] Invoking command in '/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning': PYTHONPATH=/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kalman_positioning build --build-base /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build install --record /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/install.log --single-version-externally-managed install_data
+[1.890s] running egg_info
+[1.890s] creating ../../build/kalman_positioning/kalman_positioning.egg-info
+[1.927s] writing ../../build/kalman_positioning/kalman_positioning.egg-info/PKG-INFO
+[1.928s] writing dependency_links to ../../build/kalman_positioning/kalman_positioning.egg-info/dependency_links.txt
+[1.928s] writing entry points to ../../build/kalman_positioning/kalman_positioning.egg-info/entry_points.txt
+[1.928s] writing requirements to ../../build/kalman_positioning/kalman_positioning.egg-info/requires.txt
+[1.929s] writing top-level names to ../../build/kalman_positioning/kalman_positioning.egg-info/top_level.txt
+[1.929s] writing manifest file '../../build/kalman_positioning/kalman_positioning.egg-info/SOURCES.txt'
+[1.994s] reading manifest file '../../build/kalman_positioning/kalman_positioning.egg-info/SOURCES.txt'
+[1.994s] adding license file 'LICENSE'
+[1.995s] writing manifest file '../../build/kalman_positioning/kalman_positioning.egg-info/SOURCES.txt'
+[1.996s] running build
+[1.996s] running build_py
+[1.996s] creating /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build
+[1.996s] creating /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib
+[1.997s] creating /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+[1.997s] copying kalman_positioning/landmark_manager.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+[1.997s] copying kalman_positioning/__init__.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+[1.997s] copying kalman_positioning/ukf.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+[1.997s] copying kalman_positioning/positioning_node.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning
+[1.998s] running install
+[2.007s] running install_lib
+[2.046s] creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+[2.046s] copying /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning/landmark_manager.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+[2.046s] copying /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning/__init__.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+[2.046s] copying /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning/ukf.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+[2.047s] copying /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build/lib/kalman_positioning/positioning_node.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning
+[2.047s] byte-compiling /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning/landmark_manager.py to landmark_manager.cpython-312.pyc
+[2.048s] byte-compiling /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning/__init__.py to __init__.cpython-312.pyc
+[2.049s] byte-compiling /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning/ukf.py to ukf.cpython-312.pyc
+[2.050s] byte-compiling /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning/positioning_node.py to positioning_node.cpython-312.pyc
+[2.051s] running install_data
+[2.051s] running install_egg_info
+[2.086s] Copying ../../build/kalman_positioning/kalman_positioning.egg-info to /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages/kalman_positioning-0.0.0-py3.12.egg-info
+[2.087s] running install_scripts
+[2.292s] Installing positioning_node script to /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/kalman_positioning
+[2.294s] writing list of installed files to '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/install.log'
+[2.361s] Invoked command in '/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning' returned '0': PYTHONPATH=/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kalman_positioning build --build-base /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/build install --record /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/install.log --single-version-externally-managed install_data

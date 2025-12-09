@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning" FILES "/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/ament_cmake_index/share/ament_index/resource_index/packages/kalman_positioning" "DESTINATION" "share/ament_index/resource_index/packages")

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/felix/Schreibtisch/projects/ros2_homework_1/src/fake_robot" FILES "/opt/ros/kilted/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/fake_robot/environment")

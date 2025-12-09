@@ -1,0 +1,1 @@
+/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot/ament_cmake_core/fake_robotConfig-version.cmake

@@ -1,0 +1,737 @@
+[0.000000] (-) TimerEvent: {}
+[0.001182] (fake_robot) JobQueued: {'identifier': 'fake_robot', 'dependencies': OrderedDict()}
+[0.003067] (kalman_positioning) JobQueued: {'identifier': 'kalman_positioning', 'dependencies': OrderedDict()}
+[0.003133] (kalman_positioning_py) JobQueued: {'identifier': 'kalman_positioning_py', 'dependencies': OrderedDict()}
+[0.003177] (fake_robot) JobStarted: {'identifier': 'fake_robot'}
+[0.020884] (kalman_positioning) JobStarted: {'identifier': 'kalman_positioning'}
+[0.035479] (kalman_positioning_py) JobStarted: {'identifier': 'kalman_positioning_py'}
+[0.057597] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'cmake'}
+[0.062479] (fake_robot) Command: {'cmd': ['/usr/bin/cmake', '/home/felix/Schreibtisch/projects/ros2_homework_1/src/fake_robot', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot'], 'cwd': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'felix', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/felix', 'OLDPWD': '/home/felix/Schreibtisch/projects/ros2_homework_1', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.106.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/felix/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2010', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '2331', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '26533', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/kilted/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:18790', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/felix', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/felix/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/felix/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/felix-ThinkPad-S3-S440:@/tmp/.ICE-unix/2280,unix/felix-ThinkPad-S3-S440:/tmp/.ICE-unix/2280', 'INVOCATION_ID': 'e72916ca528e48dbae908efe4c8f9891', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-fc97dde238e19e5a.txt', 'PYTHONSTARTUP': '/home/felix/.config/Code/User/workspaceStorage/72a78a34a8bbcfc90ad15f22f3fa94a4/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28WLG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1af9bcd3d5.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/felix', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.076126] (kalman_positioning) JobProgress: {'identifier': 'kalman_positioning', 'progress': 'cmake'}
+[0.078853] (kalman_positioning) Command: {'cmd': ['/usr/bin/cmake', '/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning'], 'cwd': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'felix', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/felix', 'OLDPWD': '/home/felix/Schreibtisch/projects/ros2_homework_1', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.106.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/felix/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2010', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '2331', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '26533', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/kilted/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:18790', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/felix', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/felix/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/felix/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/felix-ThinkPad-S3-S440:@/tmp/.ICE-unix/2280,unix/felix-ThinkPad-S3-S440:/tmp/.ICE-unix/2280', 'INVOCATION_ID': 'e72916ca528e48dbae908efe4c8f9891', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-fc97dde238e19e5a.txt', 'PYTHONSTARTUP': '/home/felix/.config/Code/User/workspaceStorage/72a78a34a8bbcfc90ad15f22f3fa94a4/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28WLG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1af9bcd3d5.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/felix', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.103408] (-) TimerEvent: {}
+[0.144972] (fake_robot) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)\n'}
+[0.205625] (-) TimerEvent: {}
+[0.306141] (-) TimerEvent: {}
+[0.406976] (-) TimerEvent: {}
+[0.510119] (-) TimerEvent: {}
+[0.538751] (kalman_positioning) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.610436] (-) TimerEvent: {}
+[0.711966] (-) TimerEvent: {}
+[0.815215] (-) TimerEvent: {}
+[0.875696] (kalman_positioning) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.915278] (-) TimerEvent: {}
+[0.958509] (kalman_positioning) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.015571] (-) TimerEvent: {}
+[1.118538] (-) TimerEvent: {}
+[1.154156] (fake_robot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.219558] (-) TimerEvent: {}
+[1.269200] (fake_robot) StdoutLine: {'line': b'-- Found rclcpp: 29.5.4 (/opt/ros/kilted/share/rclcpp/cmake)\n'}
+[1.320059] (-) TimerEvent: {}
+[1.368515] (kalman_positioning) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.413987] (kalman_positioning) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.415029] (kalman_positioning) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.419965] (kalman_positioning) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.420245] (-) TimerEvent: {}
+[1.469539] (kalman_positioning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.474724] (fake_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)\n'}
+[1.522957] (-) TimerEvent: {}
+[1.560585] (fake_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)\n'}
+[1.622962] (-) TimerEvent: {}
+[1.638731] (fake_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.723266] (-) TimerEvent: {}
+[1.728072] (fake_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.823557] (-) TimerEvent: {}
+[1.840335] (kalman_positioning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.874469] (kalman_positioning) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.875588] (kalman_positioning) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.879268] (kalman_positioning) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.896994] (kalman_positioning) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)\n'}
+[1.923721] (-) TimerEvent: {}
+[2.008154] (fake_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)\n'}
+[2.020354] (fake_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.3.3 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.023803] (-) TimerEvent: {}
+[2.124126] (-) TimerEvent: {}
+[2.196884] (fake_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.224231] (-) TimerEvent: {}
+[2.328835] (-) TimerEvent: {}
+[2.372727] (kalman_positioning) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.428985] (-) TimerEvent: {}
+[2.530379] (-) TimerEvent: {}
+[2.627577] (fake_robot) StdoutLine: {'line': b'-- Found geometry_msgs: 5.5.1 (/opt/ros/kilted/share/geometry_msgs/cmake)\n'}
+[2.630692] (-) TimerEvent: {}
+[2.631915] (kalman_positioning) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.730834] (-) TimerEvent: {}
+[2.731579] (kalman_positioning) StdoutLine: {'line': b'-- Found rclcpp: 29.5.4 (/opt/ros/kilted/share/rclcpp/cmake)\n'}
+[2.766149] (fake_robot) StdoutLine: {'line': b'-- Found sensor_msgs: 5.5.1 (/opt/ros/kilted/share/sensor_msgs/cmake)\n'}
+[2.831098] (-) TimerEvent: {}
+[2.849767] (fake_robot) StdoutLine: {'line': b'-- Found nav_msgs: 5.5.1 (/opt/ros/kilted/share/nav_msgs/cmake)\n'}
+[2.853892] (kalman_positioning) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)\n'}
+[2.896949] (kalman_positioning) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)\n'}
+[2.931837] (-) TimerEvent: {}
+[2.947864] (fake_robot) StdoutLine: {'line': b'-- Found tf2_ros: 0.41.4 (/opt/ros/kilted/share/tf2_ros/cmake)\n'}
+[2.953042] (kalman_positioning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.004381] (kalman_positioning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.031977] (-) TimerEvent: {}
+[3.133229] (-) TimerEvent: {}
+[3.237407] (-) TimerEvent: {}
+[3.280541] (kalman_positioning) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)\n'}
+[3.285617] (kalman_positioning) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.3.3 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.338177] (-) TimerEvent: {}
+[3.439167] (-) TimerEvent: {}
+[3.483455] (fake_robot) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):\n'}
+[3.483837] (fake_robot) StderrLine: {'line': b'  ament_target_dependencies() is deprecated.  Use target_link_libraries()\n'}
+[3.484091] (fake_robot) StderrLine: {'line': b'  with modern CMake targets instead.  Try replacing this call with:\n'}
+[3.484288] (fake_robot) StderrLine: {'line': b'\n'}
+[3.484474] (fake_robot) StderrLine: {'line': b'    target_link_libraries(fake_robot PUBLIC\n'}
+[3.484659] (fake_robot) StderrLine: {'line': b'      ${geometry_msgs_TARGETS}\n'}
+[3.484838] (fake_robot) StderrLine: {'line': b'      ${nav_msgs_TARGETS}\n'}
+[3.486747] (fake_robot) StderrLine: {'line': b'      ${sensor_msgs_TARGETS}\n'}
+[3.486951] (fake_robot) StderrLine: {'line': b'      ${std_msgs_TARGETS}\n'}
+[3.487119] (fake_robot) StderrLine: {'line': b'      rclcpp::rclcpp\n'}
+[3.487279] (fake_robot) StderrLine: {'line': b'      sensor_msgs::sensor_msgs_library\n'}
+[3.487436] (fake_robot) StderrLine: {'line': b'      tf2_ros::static_transform_broadcaster_node\n'}
+[3.487603] (fake_robot) StderrLine: {'line': b'      tf2_ros::tf2_ros\n'}
+[3.487767] (fake_robot) StderrLine: {'line': b'    )\n'}
+[3.487940] (fake_robot) StderrLine: {'line': b'\n'}
+[3.488095] (fake_robot) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.488258] (fake_robot) StderrLine: {'line': b'  CMakeLists.txt:22 (ament_target_dependencies)\n'}
+[3.488419] (fake_robot) StderrLine: {'line': b'\n'}
+[3.488579] (fake_robot) StderrLine: {'line': b'\x1b[0m\n'}
+[3.498293] (fake_robot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)\n'}
+[3.539253] (-) TimerEvent: {}
+[3.562146] (kalman_positioning) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[3.584052] (kalman_positioning_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/build', '--no-deps', 'symlink_data'], 'cwd': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'felix', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/felix', 'OLDPWD': '/home/felix/Schreibtisch/projects/ros2_homework_1', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.106.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/felix/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2010', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '2331', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '26533', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/kilted/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:18790', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/felix', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/felix/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/felix/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/felix-ThinkPad-S3-S440:@/tmp/.ICE-unix/2280,unix/felix-ThinkPad-S3-S440:/tmp/.ICE-unix/2280', 'INVOCATION_ID': 'e72916ca528e48dbae908efe4c8f9891', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-fc97dde238e19e5a.txt', 'PYTHONSTARTUP': '/home/felix/.config/Code/User/workspaceStorage/72a78a34a8bbcfc90ad15f22f3fa94a4/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28WLG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1af9bcd3d5.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/felix', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor'}, 'shell': False}
+[3.606481] (kalman_positioning) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.639364] (-) TimerEvent: {}
+[3.739961] (-) TimerEvent: {}
+[3.842563] (-) TimerEvent: {}
+[3.879678] (kalman_positioning) StdoutLine: {'line': b'-- Found nav_msgs: 5.5.1 (/opt/ros/kilted/share/nav_msgs/cmake)\n'}
+[3.945246] (-) TimerEvent: {}
+[4.037541] (fake_robot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.038859] (fake_robot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/felix/Schreibtisch/projects/ros2_homework_1/src/fake_robot/include>\n'}
+[4.041610] (fake_robot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.042807] (fake_robot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.043318] (fake_robot) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[4.051276] (fake_robot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.051616] (-) TimerEvent: {}
+[4.051848] (fake_robot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.064541] (fake_robot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.065254] (fake_robot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.069990] (fake_robot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.080315] (fake_robot) StdoutLine: {'line': b'-- Configuring done (4.0s)\n'}
+[4.080965] (kalman_positioning) StdoutLine: {'line': b'-- Found sensor_msgs: 5.5.1 (/opt/ros/kilted/share/sensor_msgs/cmake)\n'}
+[4.151735] (-) TimerEvent: {}
+[4.183726] (kalman_positioning) StdoutLine: {'line': b'-- Found tf2: 0.41.4 (/opt/ros/kilted/share/tf2/cmake)\n'}
+[4.196841] (fake_robot) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[4.206218] (kalman_positioning) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.41.4 (/opt/ros/kilted/share/tf2_geometry_msgs/cmake)\n'}
+[4.221970] (fake_robot) StdoutLine: {'line': b'-- Build files have been written to: /home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot\n'}
+[4.253771] (-) TimerEvent: {}
+[4.266990] (fake_robot) CommandEnded: {'returncode': 0}
+[4.268086] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'build'}
+[4.269075] (fake_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot', '--', '-j4', '-l4'], 'cwd': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'felix', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/felix', 'OLDPWD': '/home/felix/Schreibtisch/projects/ros2_homework_1', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.106.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/felix/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2010', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '2331', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '26533', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/kilted/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:18790', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/felix', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/felix/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/felix/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/felix-ThinkPad-S3-S440:@/tmp/.ICE-unix/2280,unix/felix-ThinkPad-S3-S440:/tmp/.ICE-unix/2280', 'INVOCATION_ID': 'e72916ca528e48dbae908efe4c8f9891', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-fc97dde238e19e5a.txt', 'PYTHONSTARTUP': '/home/felix/.config/Code/User/workspaceStorage/72a78a34a8bbcfc90ad15f22f3fa94a4/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28WLG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1af9bcd3d5.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/felix', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[4.285398] (kalman_positioning) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.4.0 (/opt/ros/kilted/share/eigen3_cmake_module/cmake)\n'}
+[4.300809] (kalman_positioning) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[4.301235] (kalman_positioning) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.354054] (-) TimerEvent: {}
+[4.455679] (-) TimerEvent: {}
+[4.540473] (fake_robot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o\x1b[0m\n'}
+[4.555957] (-) TimerEvent: {}
+[4.656960] (-) TimerEvent: {}
+[4.757485] (-) TimerEvent: {}
+[4.801427] (kalman_positioning) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):\n'}
+[4.804993] (kalman_positioning) StderrLine: {'line': b'  ament_target_dependencies() is deprecated.  Use target_link_libraries()\n'}
+[4.805474] (kalman_positioning) StderrLine: {'line': b'  with modern CMake targets instead.  Try replacing this call with:\n'}
+[4.805678] (kalman_positioning) StderrLine: {'line': b'\n'}
+[4.805858] (kalman_positioning) StderrLine: {'line': b'    target_link_libraries(positioning_node PUBLIC\n'}
+[4.806045] (kalman_positioning) StderrLine: {'line': b'      ${geometry_msgs_TARGETS}\n'}
+[4.806224] (kalman_positioning) StderrLine: {'line': b'      ${nav_msgs_TARGETS}\n'}
+[4.806406] (kalman_positioning) StderrLine: {'line': b'      ${sensor_msgs_TARGETS}\n'}
+[4.806579] (kalman_positioning) StderrLine: {'line': b'      rclcpp::rclcpp\n'}
+[4.806761] (kalman_positioning) StderrLine: {'line': b'      sensor_msgs::sensor_msgs_library\n'}
+[4.810614] (kalman_positioning) StderrLine: {'line': b'      tf2::tf2\n'}
+[4.810877] (kalman_positioning) StderrLine: {'line': b'      tf2_geometry_msgs::tf2_geometry_msgs\n'}
+[4.811092] (kalman_positioning) StderrLine: {'line': b'    )\n'}
+[4.813384] (kalman_positioning) StderrLine: {'line': b'\n'}
+[4.814428] (kalman_positioning) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.814623] (kalman_positioning) StderrLine: {'line': b'  CMakeLists.txt:34 (ament_target_dependencies)\n'}
+[4.814805] (kalman_positioning) StderrLine: {'line': b'\n'}
+[4.815012] (kalman_positioning) StderrLine: {'line': b'\x1b[0m\n'}
+[4.818538] (kalman_positioning) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)\n'}
+[4.857825] (-) TimerEvent: {}
+[4.880089] (kalman_positioning_py) StdoutLine: {'line': b'running develop\n'}
+[4.960305] (-) TimerEvent: {}
+[5.060874] (-) TimerEvent: {}
+[5.164492] (-) TimerEvent: {}
+[5.265638] (kalman_positioning) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.265981] (-) TimerEvent: {}
+[5.266292] (kalman_positioning) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning/include\n'}
+[5.266538] (kalman_positioning) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.272797] (kalman_positioning) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.273165] (kalman_positioning) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[5.273410] (kalman_positioning) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.281077] (kalman_positioning) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[5.299397] (kalman_positioning) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.300350] (kalman_positioning) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.310897] (kalman_positioning) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.339149] (kalman_positioning) StdoutLine: {'line': b'-- Configuring done (5.2s)\n'}
+[5.367142] (-) TimerEvent: {}
+[5.472128] (-) TimerEvent: {}
+[5.573837] (-) TimerEvent: {}
+[5.676862] (-) TimerEvent: {}
+[5.782003] (-) TimerEvent: {}
+[5.875603] (kalman_positioning_py) StdoutLine: {'line': b'running egg_info\n'}
+[5.876138] (kalman_positioning_py) StdoutLine: {'line': b'creating kalman_positioning_py.egg-info\n'}
+[5.883346] (-) TimerEvent: {}
+[5.983849] (kalman_positioning_py) StdoutLine: {'line': b'writing kalman_positioning_py.egg-info/PKG-INFO\n'}
+[5.984168] (-) TimerEvent: {}
+[5.984923] (kalman_positioning_py) StdoutLine: {'line': b'writing dependency_links to kalman_positioning_py.egg-info/dependency_links.txt\n'}
+[5.987093] (kalman_positioning_py) StdoutLine: {'line': b'writing entry points to kalman_positioning_py.egg-info/entry_points.txt\n'}
+[5.987354] (kalman_positioning_py) StdoutLine: {'line': b'writing requirements to kalman_positioning_py.egg-info/requires.txt\n'}
+[5.987550] (kalman_positioning_py) StdoutLine: {'line': b'writing top-level names to kalman_positioning_py.egg-info/top_level.txt\n'}
+[5.987746] (kalman_positioning_py) StdoutLine: {'line': b"writing manifest file 'kalman_positioning_py.egg-info/SOURCES.txt'\n"}
+[6.084565] (-) TimerEvent: {}
+[6.190049] (-) TimerEvent: {}
+[6.269025] (kalman_positioning_py) StdoutLine: {'line': b"reading manifest file 'kalman_positioning_py.egg-info/SOURCES.txt'\n"}
+[6.270421] (kalman_positioning_py) StdoutLine: {'line': b"writing manifest file 'kalman_positioning_py.egg-info/SOURCES.txt'\n"}
+[6.290925] (-) TimerEvent: {}
+[6.391491] (-) TimerEvent: {}
+[6.429960] (kalman_positioning_py) StdoutLine: {'line': b'running build_ext\n'}
+[6.430335] (kalman_positioning_py) StdoutLine: {'line': b'Creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/lib/python3.12/site-packages/kalman-positioning-py.egg-link (link to .)\n'}
+[6.431890] (kalman_positioning_py) StdoutLine: {'line': b'Installing positioning_node script to /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/lib/kalman_positioning_py\n'}
+[6.432209] (kalman_positioning_py) StdoutLine: {'line': b'\n'}
+[6.432445] (kalman_positioning_py) StdoutLine: {'line': b'Installed /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py\n'}
+[6.432755] (kalman_positioning_py) StdoutLine: {'line': b'running symlink_data\n'}
+[6.432996] (kalman_positioning_py) StdoutLine: {'line': b'creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/ament_index\n'}
+[6.433324] (kalman_positioning_py) StdoutLine: {'line': b'creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/ament_index/resource_index\n'}
+[6.435505] (kalman_positioning_py) StdoutLine: {'line': b'creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/ament_index/resource_index/packages\n'}
+[6.435927] (kalman_positioning_py) StdoutLine: {'line': b'symbolically linking /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/resource/kalman_positioning_py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/ament_index/resource_index/packages\n'}
+[6.436159] (kalman_positioning_py) StdoutLine: {'line': b'symbolically linking /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/package.xml -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/kalman_positioning_py\n'}
+[6.436376] (kalman_positioning_py) StdoutLine: {'line': b'creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/kalman_positioning_py/launch\n'}
+[6.436565] (kalman_positioning_py) StdoutLine: {'line': b'symbolically linking /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/launch/positioning.launch.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/kalman_positioning_py/launch\n'}
+[6.492328] (-) TimerEvent: {}
+[6.596883] (-) TimerEvent: {}
+[6.703409] (-) TimerEvent: {}
+[6.794158] (kalman_positioning_py) CommandEnded: {'returncode': 0}
+[6.807251] (-) TimerEvent: {}
+[6.917016] (-) TimerEvent: {}
+[6.950980] (kalman_positioning_py) JobEnded: {'identifier': 'kalman_positioning_py', 'rc': 0}
+[7.017134] (-) TimerEvent: {}
+[7.118108] (-) TimerEvent: {}
+[7.227121] (-) TimerEvent: {}
+[7.328361] (-) TimerEvent: {}
+[7.349193] (kalman_positioning) StdoutLine: {'line': b'-- Generating done (1.6s)\n'}
+[7.429431] (-) TimerEvent: {}
+[7.468608] (kalman_positioning) StdoutLine: {'line': b'-- Build files have been written to: /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning\n'}
+[7.531040] (-) TimerEvent: {}
+[7.604258] (kalman_positioning) CommandEnded: {'returncode': 0}
+[7.605349] (kalman_positioning) JobProgress: {'identifier': 'kalman_positioning', 'progress': 'build'}
+[7.605530] (kalman_positioning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning', '--', '-j4', '-l4'], 'cwd': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'felix', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/felix', 'OLDPWD': '/home/felix/Schreibtisch/projects/ros2_homework_1', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.106.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/felix/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2010', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '2331', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '26533', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/kilted/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:18790', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/felix', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/felix/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/felix/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/felix-ThinkPad-S3-S440:@/tmp/.ICE-unix/2280,unix/felix-ThinkPad-S3-S440:/tmp/.ICE-unix/2280', 'INVOCATION_ID': 'e72916ca528e48dbae908efe4c8f9891', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-fc97dde238e19e5a.txt', 'PYTHONSTARTUP': '/home/felix/.config/Code/User/workspaceStorage/72a78a34a8bbcfc90ad15f22f3fa94a4/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28WLG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1af9bcd3d5.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/felix', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[7.633637] (-) TimerEvent: {}
+[7.735784] (-) TimerEvent: {}
+[7.839253] (-) TimerEvent: {}
+[7.944126] (-) TimerEvent: {}
+[8.053499] (-) TimerEvent: {}
+[8.143996] (kalman_positioning) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o\x1b[0m\n'}
+[8.154764] (-) TimerEvent: {}
+[8.260851] (-) TimerEvent: {}
+[8.362996] (-) TimerEvent: {}
+[8.463823] (-) TimerEvent: {}
+[8.565816] (-) TimerEvent: {}
+[8.669590] (-) TimerEvent: {}
+[8.775377] (-) TimerEvent: {}
+[8.884147] (-) TimerEvent: {}
+[8.986034] (-) TimerEvent: {}
+[9.091062] (-) TimerEvent: {}
+[9.194713] (-) TimerEvent: {}
+[9.302470] (-) TimerEvent: {}
+[9.406298] (-) TimerEvent: {}
+[9.511061] (-) TimerEvent: {}
+[9.615377] (-) TimerEvent: {}
+[9.717404] (-) TimerEvent: {}
+[9.818203] (-) TimerEvent: {}
+[9.920322] (-) TimerEvent: {}
+[10.024183] (-) TimerEvent: {}
+[10.128687] (-) TimerEvent: {}
+[10.232443] (-) TimerEvent: {}
+[10.340008] (-) TimerEvent: {}
+[10.441208] (-) TimerEvent: {}
+[10.543404] (-) TimerEvent: {}
+[10.646010] (-) TimerEvent: {}
+[10.754190] (-) TimerEvent: {}
+[10.860219] (-) TimerEvent: {}
+[10.960617] (-) TimerEvent: {}
+[11.061769] (-) TimerEvent: {}
+[11.163440] (-) TimerEvent: {}
+[11.268219] (-) TimerEvent: {}
+[11.373062] (-) TimerEvent: {}
+[11.475512] (-) TimerEvent: {}
+[11.596242] (-) TimerEvent: {}
+[11.697668] (-) TimerEvent: {}
+[11.799162] (-) TimerEvent: {}
+[11.899724] (-) TimerEvent: {}
+[12.000850] (-) TimerEvent: {}
+[12.104800] (-) TimerEvent: {}
+[12.210382] (-) TimerEvent: {}
+[12.313159] (-) TimerEvent: {}
+[12.416117] (-) TimerEvent: {}
+[12.517423] (-) TimerEvent: {}
+[12.619381] (-) TimerEvent: {}
+[12.719984] (-) TimerEvent: {}
+[12.824402] (-) TimerEvent: {}
+[12.927609] (-) TimerEvent: {}
+[13.028011] (-) TimerEvent: {}
+[13.128663] (-) TimerEvent: {}
+[13.231325] (-) TimerEvent: {}
+[13.332704] (-) TimerEvent: {}
+[13.439154] (-) TimerEvent: {}
+[13.539582] (-) TimerEvent: {}
+[13.640321] (-) TimerEvent: {}
+[13.741375] (-) TimerEvent: {}
+[13.844435] (-) TimerEvent: {}
+[13.945519] (-) TimerEvent: {}
+[14.047347] (-) TimerEvent: {}
+[14.150173] (-) TimerEvent: {}
+[14.250879] (-) TimerEvent: {}
+[14.351499] (-) TimerEvent: {}
+[14.452801] (-) TimerEvent: {}
+[14.553980] (-) TimerEvent: {}
+[14.654349] (-) TimerEvent: {}
+[14.755978] (-) TimerEvent: {}
+[14.856374] (-) TimerEvent: {}
+[14.960531] (-) TimerEvent: {}
+[15.060998] (-) TimerEvent: {}
+[15.164008] (-) TimerEvent: {}
+[15.264429] (-) TimerEvent: {}
+[15.364888] (-) TimerEvent: {}
+[15.465738] (-) TimerEvent: {}
+[15.568030] (-) TimerEvent: {}
+[15.672000] (-) TimerEvent: {}
+[15.772400] (-) TimerEvent: {}
+[15.873647] (-) TimerEvent: {}
+[15.974533] (-) TimerEvent: {}
+[16.075512] (-) TimerEvent: {}
+[16.176547] (-) TimerEvent: {}
+[16.277418] (-) TimerEvent: {}
+[16.378944] (-) TimerEvent: {}
+[16.480472] (-) TimerEvent: {}
+[16.581380] (-) TimerEvent: {}
+[16.681803] (-) TimerEvent: {}
+[16.782301] (-) TimerEvent: {}
+[16.882704] (-) TimerEvent: {}
+[16.983982] (-) TimerEvent: {}
+[17.084379] (-) TimerEvent: {}
+[17.184893] (-) TimerEvent: {}
+[17.285300] (-) TimerEvent: {}
+[17.386024] (-) TimerEvent: {}
+[17.487228] (-) TimerEvent: {}
+[17.587616] (-) TimerEvent: {}
+[17.691029] (-) TimerEvent: {}
+[17.791481] (-) TimerEvent: {}
+[17.893006] (-) TimerEvent: {}
+[17.967838] (kalman_positioning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[17.968883] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[17.969085] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[17.969257] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning/src/positioning_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.969437] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning/src/positioning_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PositioningNode::\x1b[01;32m\x1b[KlandmarksObservedCallback\x1b[m\x1b[K(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.972051] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning/src/positioning_node.cpp:126:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%lu\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.972269] (kalman_positioning) StderrLine: {'line': b'  126 |             \x1b[01;35m\x1b[K"Landmark observation received with %lu points"\x1b[m\x1b[K, \x1b[32m\x1b[Kmsg->width\x1b[m\x1b[K);\n'}
+[17.972441] (kalman_positioning) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.972610] (kalman_positioning) StderrLine: {'line': b'      |                                                                   \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[17.972775] (kalman_positioning) StderrLine: {'line': b'      |                                                                   \x1b[32m\x1b[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type {aka unsigned int}\x1b[m\x1b[K\n'}
+[17.976092] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning/src/positioning_node.cpp:126:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[17.976345] (kalman_positioning) StderrLine: {'line': b'  126 |             "Landmark observation received with \x1b[01;36m\x1b[K%lu\x1b[m\x1b[K points", msg->width);\n'}
+[17.976523] (kalman_positioning) StderrLine: {'line': b'      |                                                 \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[17.976694] (kalman_positioning) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[17.976850] (kalman_positioning) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[Klong unsigned int\x1b[m\x1b[K\n'}
+[17.977029] (kalman_positioning) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[K%u\x1b[m\x1b[K\n'}
+[17.993179] (-) TimerEvent: {}
+[18.093989] (-) TimerEvent: {}
+[18.195088] (-) TimerEvent: {}
+[18.296167] (-) TimerEvent: {}
+[18.399178] (-) TimerEvent: {}
+[18.499993] (-) TimerEvent: {}
+[18.604139] (-) TimerEvent: {}
+[18.706644] (-) TimerEvent: {}
+[18.807166] (-) TimerEvent: {}
+[18.907589] (-) TimerEvent: {}
+[19.007997] (-) TimerEvent: {}
+[19.108453] (-) TimerEvent: {}
+[19.211097] (-) TimerEvent: {}
+[19.311480] (-) TimerEvent: {}
+[19.411850] (-) TimerEvent: {}
+[19.512249] (-) TimerEvent: {}
+[19.612648] (-) TimerEvent: {}
+[19.713050] (-) TimerEvent: {}
+[19.813486] (-) TimerEvent: {}
+[19.913918] (-) TimerEvent: {}
+[20.015261] (-) TimerEvent: {}
+[20.115684] (-) TimerEvent: {}
+[20.216502] (-) TimerEvent: {}
+[20.316921] (-) TimerEvent: {}
+[20.417302] (-) TimerEvent: {}
+[20.517667] (-) TimerEvent: {}
+[20.617988] (-) TimerEvent: {}
+[20.718359] (-) TimerEvent: {}
+[20.818749] (-) TimerEvent: {}
+[20.919858] (-) TimerEvent: {}
+[21.024999] (-) TimerEvent: {}
+[21.125476] (-) TimerEvent: {}
+[21.225980] (-) TimerEvent: {}
+[21.326463] (-) TimerEvent: {}
+[21.426958] (-) TimerEvent: {}
+[21.527449] (-) TimerEvent: {}
+[21.628140] (-) TimerEvent: {}
+[21.728512] (-) TimerEvent: {}
+[21.829176] (-) TimerEvent: {}
+[21.929585] (-) TimerEvent: {}
+[22.029971] (-) TimerEvent: {}
+[22.130361] (-) TimerEvent: {}
+[22.230753] (-) TimerEvent: {}
+[22.331494] (-) TimerEvent: {}
+[22.431864] (-) TimerEvent: {}
+[22.532246] (-) TimerEvent: {}
+[22.632629] (-) TimerEvent: {}
+[22.732995] (-) TimerEvent: {}
+[22.833383] (-) TimerEvent: {}
+[22.933773] (-) TimerEvent: {}
+[23.034295] (-) TimerEvent: {}
+[23.134683] (-) TimerEvent: {}
+[23.235081] (-) TimerEvent: {}
+[23.335486] (-) TimerEvent: {}
+[23.435944] (-) TimerEvent: {}
+[23.536362] (-) TimerEvent: {}
+[23.636745] (-) TimerEvent: {}
+[23.737201] (-) TimerEvent: {}
+[23.837740] (-) TimerEvent: {}
+[23.938467] (-) TimerEvent: {}
+[23.938940] (fake_robot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable fake_robot\x1b[0m\n'}
+[24.038623] (-) TimerEvent: {}
+[24.139366] (-) TimerEvent: {}
+[24.241999] (-) TimerEvent: {}
+[24.342800] (-) TimerEvent: {}
+[24.446200] (-) TimerEvent: {}
+[24.547604] (-) TimerEvent: {}
+[24.647992] (-) TimerEvent: {}
+[24.748597] (-) TimerEvent: {}
+[24.850617] (-) TimerEvent: {}
+[24.884789] (fake_robot) StdoutLine: {'line': b'[100%] Built target fake_robot\n'}
+[24.907803] (fake_robot) CommandEnded: {'returncode': 0}
+[24.910775] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'install'}
+[24.933711] (fake_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot'], 'cwd': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'felix', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/felix', 'OLDPWD': '/home/felix/Schreibtisch/projects/ros2_homework_1', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.106.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/felix/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2010', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '2331', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '26533', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/kilted/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:18790', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/felix', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/felix/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/felix/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/felix-ThinkPad-S3-S440:@/tmp/.ICE-unix/2280,unix/felix-ThinkPad-S3-S440:/tmp/.ICE-unix/2280', 'INVOCATION_ID': 'e72916ca528e48dbae908efe4c8f9891', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-fc97dde238e19e5a.txt', 'PYTHONSTARTUP': '/home/felix/.config/Code/User/workspaceStorage/72a78a34a8bbcfc90ad15f22f3fa94a4/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28WLG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1af9bcd3d5.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/fake_robot', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/felix', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[24.951067] (-) TimerEvent: {}
+[24.965131] (fake_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.967154] (fake_robot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[24.969890] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/lib/fake_robot/fake_robot\n'}
+[25.017687] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/launch/fake_robot.launch.py\n'}
+[25.051654] (-) TimerEvent: {}
+[25.057512] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/data/landmarks.csv\n'}
+[25.143927] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/ament_index/resource_index/package_run_dependencies/fake_robot\n'}
+[25.152962] (-) TimerEvent: {}
+[25.206761] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/ament_index/resource_index/parent_prefix_path/fake_robot\n'}
+[25.255493] (-) TimerEvent: {}
+[25.316276] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/environment/ament_prefix_path.sh\n'}
+[25.359769] (-) TimerEvent: {}
+[25.407481] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/environment/ament_prefix_path.dsv\n'}
+[25.461369] (-) TimerEvent: {}
+[25.469968] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/environment/path.sh\n'}
+[25.503705] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/environment/path.dsv\n'}
+[25.539273] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/local_setup.bash\n'}
+[25.562304] (-) TimerEvent: {}
+[25.580181] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/local_setup.sh\n'}
+[25.615149] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/local_setup.zsh\n'}
+[25.661578] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/local_setup.dsv\n'}
+[25.663239] (-) TimerEvent: {}
+[25.724747] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/package.dsv\n'}
+[25.764096] (-) TimerEvent: {}
+[25.778146] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/ament_index/resource_index/packages/fake_robot\n'}
+[25.814290] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/cmake/fake_robotConfig.cmake\n'}
+[25.854807] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/cmake/fake_robotConfig-version.cmake\n'}
+[25.864672] (-) TimerEvent: {}
+[25.876621] (fake_robot) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/fake_robot/share/fake_robot/package.xml\n'}
+[25.906932] (fake_robot) CommandEnded: {'returncode': 0}
+[25.940920] (fake_robot) JobEnded: {'identifier': 'fake_robot', 'rc': 0}
+[25.964766] (-) TimerEvent: {}
+[26.065197] (-) TimerEvent: {}
+[26.167465] (-) TimerEvent: {}
+[26.268136] (-) TimerEvent: {}
+[26.371088] (-) TimerEvent: {}
+[26.472716] (-) TimerEvent: {}
+[26.573875] (-) TimerEvent: {}
+[26.674525] (-) TimerEvent: {}
+[26.777231] (-) TimerEvent: {}
+[26.883250] (-) TimerEvent: {}
+[26.988148] (-) TimerEvent: {}
+[27.088590] (-) TimerEvent: {}
+[27.189262] (-) TimerEvent: {}
+[27.290283] (-) TimerEvent: {}
+[27.390866] (-) TimerEvent: {}
+[27.491342] (-) TimerEvent: {}
+[27.592309] (-) TimerEvent: {}
+[27.693880] (-) TimerEvent: {}
+[27.796168] (-) TimerEvent: {}
+[27.896821] (-) TimerEvent: {}
+[27.997789] (-) TimerEvent: {}
+[28.098133] (-) TimerEvent: {}
+[28.198626] (-) TimerEvent: {}
+[28.299653] (-) TimerEvent: {}
+[28.400484] (-) TimerEvent: {}
+[28.501174] (-) TimerEvent: {}
+[28.601839] (-) TimerEvent: {}
+[28.702740] (-) TimerEvent: {}
+[28.803892] (-) TimerEvent: {}
+[28.905160] (-) TimerEvent: {}
+[29.005550] (-) TimerEvent: {}
+[29.105938] (-) TimerEvent: {}
+[29.206588] (-) TimerEvent: {}
+[29.307494] (-) TimerEvent: {}
+[29.407952] (-) TimerEvent: {}
+[29.508571] (-) TimerEvent: {}
+[29.610607] (-) TimerEvent: {}
+[29.713016] (-) TimerEvent: {}
+[29.813871] (-) TimerEvent: {}
+[29.914885] (-) TimerEvent: {}
+[30.017508] (-) TimerEvent: {}
+[30.118069] (-) TimerEvent: {}
+[30.223053] (-) TimerEvent: {}
+[30.323528] (-) TimerEvent: {}
+[30.424150] (-) TimerEvent: {}
+[30.527340] (-) TimerEvent: {}
+[30.627706] (-) TimerEvent: {}
+[30.728061] (-) TimerEvent: {}
+[30.828399] (-) TimerEvent: {}
+[30.928728] (-) TimerEvent: {}
+[31.029072] (-) TimerEvent: {}
+[31.129420] (-) TimerEvent: {}
+[31.229758] (-) TimerEvent: {}
+[31.330106] (-) TimerEvent: {}
+[31.430442] (-) TimerEvent: {}
+[31.530765] (-) TimerEvent: {}
+[31.631125] (-) TimerEvent: {}
+[31.731452] (-) TimerEvent: {}
+[31.831778] (-) TimerEvent: {}
+[31.932117] (-) TimerEvent: {}
+[32.032445] (-) TimerEvent: {}
+[32.132977] (-) TimerEvent: {}
+[32.234126] (-) TimerEvent: {}
+[32.336437] (-) TimerEvent: {}
+[32.437026] (-) TimerEvent: {}
+[32.537386] (-) TimerEvent: {}
+[32.637717] (-) TimerEvent: {}
+[32.738045] (-) TimerEvent: {}
+[32.838376] (-) TimerEvent: {}
+[32.938718] (-) TimerEvent: {}
+[33.039050] (-) TimerEvent: {}
+[33.139380] (-) TimerEvent: {}
+[33.239716] (-) TimerEvent: {}
+[33.340056] (-) TimerEvent: {}
+[33.440431] (-) TimerEvent: {}
+[33.540744] (-) TimerEvent: {}
+[33.645990] (-) TimerEvent: {}
+[33.746393] (-) TimerEvent: {}
+[33.847195] (-) TimerEvent: {}
+[33.947823] (-) TimerEvent: {}
+[34.048185] (-) TimerEvent: {}
+[34.148552] (-) TimerEvent: {}
+[34.248953] (-) TimerEvent: {}
+[34.349319] (-) TimerEvent: {}
+[34.449690] (-) TimerEvent: {}
+[34.550070] (-) TimerEvent: {}
+[34.650495] (-) TimerEvent: {}
+[34.750864] (-) TimerEvent: {}
+[34.851277] (-) TimerEvent: {}
+[34.946214] (kalman_positioning) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable positioning_node\x1b[0m\n'}
+[34.951400] (-) TimerEvent: {}
+[35.051779] (-) TimerEvent: {}
+[35.152441] (-) TimerEvent: {}
+[35.255019] (-) TimerEvent: {}
+[35.360899] (-) TimerEvent: {}
+[35.464945] (-) TimerEvent: {}
+[35.565879] (-) TimerEvent: {}
+[35.669362] (-) TimerEvent: {}
+[35.769972] (-) TimerEvent: {}
+[35.870463] (-) TimerEvent: {}
+[35.971000] (-) TimerEvent: {}
+[36.072064] (-) TimerEvent: {}
+[36.175134] (-) TimerEvent: {}
+[36.276101] (-) TimerEvent: {}
+[36.377808] (-) TimerEvent: {}
+[36.478742] (-) TimerEvent: {}
+[36.579883] (-) TimerEvent: {}
+[36.680869] (-) TimerEvent: {}
+[36.782390] (-) TimerEvent: {}
+[36.883050] (-) TimerEvent: {}
+[36.983931] (-) TimerEvent: {}
+[37.084469] (-) TimerEvent: {}
+[37.184887] (-) TimerEvent: {}
+[37.285407] (-) TimerEvent: {}
+[37.385959] (-) TimerEvent: {}
+[37.486496] (-) TimerEvent: {}
+[37.586962] (-) TimerEvent: {}
+[37.687427] (-) TimerEvent: {}
+[37.787896] (-) TimerEvent: {}
+[37.888371] (-) TimerEvent: {}
+[37.988771] (-) TimerEvent: {}
+[38.089225] (-) TimerEvent: {}
+[38.189673] (-) TimerEvent: {}
+[38.290072] (-) TimerEvent: {}
+[38.390533] (-) TimerEvent: {}
+[38.491078] (-) TimerEvent: {}
+[38.591508] (-) TimerEvent: {}
+[38.692160] (-) TimerEvent: {}
+[38.793113] (-) TimerEvent: {}
+[38.893676] (-) TimerEvent: {}
+[38.994196] (-) TimerEvent: {}
+[39.094622] (-) TimerEvent: {}
+[39.195308] (-) TimerEvent: {}
+[39.296734] (-) TimerEvent: {}
+[39.397154] (-) TimerEvent: {}
+[39.497592] (-) TimerEvent: {}
+[39.598023] (-) TimerEvent: {}
+[39.698448] (-) TimerEvent: {}
+[39.798969] (-) TimerEvent: {}
+[39.899428] (-) TimerEvent: {}
+[39.999869] (-) TimerEvent: {}
+[40.100283] (-) TimerEvent: {}
+[40.200731] (-) TimerEvent: {}
+[40.302000] (-) TimerEvent: {}
+[40.403038] (-) TimerEvent: {}
+[40.504202] (-) TimerEvent: {}
+[40.604663] (-) TimerEvent: {}
+[40.705085] (-) TimerEvent: {}
+[40.805512] (-) TimerEvent: {}
+[40.905992] (-) TimerEvent: {}
+[41.006426] (-) TimerEvent: {}
+[41.106889] (-) TimerEvent: {}
+[41.207382] (-) TimerEvent: {}
+[41.307994] (-) TimerEvent: {}
+[41.408427] (-) TimerEvent: {}
+[41.508833] (-) TimerEvent: {}
+[41.609337] (-) TimerEvent: {}
+[41.709862] (-) TimerEvent: {}
+[41.810486] (-) TimerEvent: {}
+[41.911026] (-) TimerEvent: {}
+[42.011405] (-) TimerEvent: {}
+[42.111878] (-) TimerEvent: {}
+[42.212324] (-) TimerEvent: {}
+[42.312754] (-) TimerEvent: {}
+[42.413268] (-) TimerEvent: {}
+[42.513732] (-) TimerEvent: {}
+[42.614183] (-) TimerEvent: {}
+[42.714581] (-) TimerEvent: {}
+[42.815024] (-) TimerEvent: {}
+[42.915457] (-) TimerEvent: {}
+[43.015843] (-) TimerEvent: {}
+[43.116316] (-) TimerEvent: {}
+[43.216794] (-) TimerEvent: {}
+[43.317285] (-) TimerEvent: {}
+[43.417751] (-) TimerEvent: {}
+[43.518230] (-) TimerEvent: {}
+[43.618737] (-) TimerEvent: {}
+[43.720005] (-) TimerEvent: {}
+[43.823007] (-) TimerEvent: {}
+[43.923495] (-) TimerEvent: {}
+[44.023977] (-) TimerEvent: {}
+[44.124405] (-) TimerEvent: {}
+[44.224762] (-) TimerEvent: {}
+[44.325212] (-) TimerEvent: {}
+[44.425858] (-) TimerEvent: {}
+[44.526465] (-) TimerEvent: {}
+[44.626871] (-) TimerEvent: {}
+[44.727314] (-) TimerEvent: {}
+[44.827756] (-) TimerEvent: {}
+[44.928139] (-) TimerEvent: {}
+[45.028600] (-) TimerEvent: {}
+[45.129021] (-) TimerEvent: {}
+[45.229484] (-) TimerEvent: {}
+[45.329925] (-) TimerEvent: {}
+[45.430333] (-) TimerEvent: {}
+[45.530682] (-) TimerEvent: {}
+[45.631124] (-) TimerEvent: {}
+[45.731611] (-) TimerEvent: {}
+[45.832047] (-) TimerEvent: {}
+[45.932450] (-) TimerEvent: {}
+[46.032835] (-) TimerEvent: {}
+[46.133237] (-) TimerEvent: {}
+[46.233646] (-) TimerEvent: {}
+[46.334011] (-) TimerEvent: {}
+[46.437014] (-) TimerEvent: {}
+[46.537501] (-) TimerEvent: {}
+[46.637912] (-) TimerEvent: {}
+[46.738813] (-) TimerEvent: {}
+[46.839337] (-) TimerEvent: {}
+[46.939801] (-) TimerEvent: {}
+[47.040257] (-) TimerEvent: {}
+[47.140703] (-) TimerEvent: {}
+[47.241066] (-) TimerEvent: {}
+[47.341442] (-) TimerEvent: {}
+[47.441843] (-) TimerEvent: {}
+[47.542306] (-) TimerEvent: {}
+[47.642812] (-) TimerEvent: {}
+[47.743298] (-) TimerEvent: {}
+[47.844001] (-) TimerEvent: {}
+[47.944434] (-) TimerEvent: {}
+[48.044771] (-) TimerEvent: {}
+[48.145180] (-) TimerEvent: {}
+[48.245743] (-) TimerEvent: {}
+[48.346224] (-) TimerEvent: {}
+[48.446701] (-) TimerEvent: {}
+[48.547158] (-) TimerEvent: {}
+[48.647600] (-) TimerEvent: {}
+[48.747959] (-) TimerEvent: {}
+[48.848268] (-) TimerEvent: {}
+[48.948667] (-) TimerEvent: {}
+[49.049039] (-) TimerEvent: {}
+[49.149401] (-) TimerEvent: {}
+[49.249766] (-) TimerEvent: {}
+[49.350120] (-) TimerEvent: {}
+[49.450488] (-) TimerEvent: {}
+[49.550964] (-) TimerEvent: {}
+[49.651307] (-) TimerEvent: {}
+[49.751671] (-) TimerEvent: {}
+[49.852077] (-) TimerEvent: {}
+[49.952607] (-) TimerEvent: {}
+[50.053227] (-) TimerEvent: {}
+[50.153669] (-) TimerEvent: {}
+[50.254031] (-) TimerEvent: {}
+[50.354447] (-) TimerEvent: {}
+[50.454941] (-) TimerEvent: {}
+[50.555479] (-) TimerEvent: {}
+[50.655890] (-) TimerEvent: {}
+[50.756292] (-) TimerEvent: {}
+[50.856688] (-) TimerEvent: {}
+[50.957084] (-) TimerEvent: {}
+[51.057511] (-) TimerEvent: {}
+[51.157878] (-) TimerEvent: {}
+[51.258318] (-) TimerEvent: {}
+[51.358809] (-) TimerEvent: {}
+[51.459240] (-) TimerEvent: {}
+[51.559618] (-) TimerEvent: {}
+[51.659979] (-) TimerEvent: {}
+[51.760454] (-) TimerEvent: {}
+[51.860853] (-) TimerEvent: {}
+[51.961212] (-) TimerEvent: {}
+[52.061500] (-) TimerEvent: {}
+[52.128369] (kalman_positioning) StdoutLine: {'line': b'[100%] Built target positioning_node\n'}
+[52.142328] (kalman_positioning) CommandEnded: {'returncode': 0}
+[52.143354] (kalman_positioning) JobProgress: {'identifier': 'kalman_positioning', 'progress': 'install'}
+[52.143922] (kalman_positioning) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning'], 'cwd': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'felix', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/felix', 'OLDPWD': '/home/felix/Schreibtisch/projects/ros2_homework_1', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.106.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/felix/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2010', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '2331', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '26533', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/kilted/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'felix', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:18790', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/felix', 'USERNAME': 'felix', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/felix/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/felix/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/felix-ThinkPad-S3-S440:@/tmp/.ICE-unix/2280,unix/felix-ThinkPad-S3-S440:/tmp/.ICE-unix/2280', 'INVOCATION_ID': 'e72916ca528e48dbae908efe4c8f9891', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/felix/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-fc97dde238e19e5a.txt', 'PYTHONSTARTUP': '/home/felix/.config/Code/User/workspaceStorage/72a78a34a8bbcfc90ad15f22f3fa94a4/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28WLG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1af9bcd3d5.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/felix', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[52.153694] (kalman_positioning) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[52.154403] (kalman_positioning) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[52.155152] (kalman_positioning) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/lib/kalman_positioning/positioning_node\n'}
+[52.161612] (-) TimerEvent: {}
+[52.166720] (kalman_positioning) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/include/kalman_positioning/landmark_manager.hpp\n'}
+[52.180298] (kalman_positioning) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/include/kalman_positioning/ukf.hpp\n'}
+[52.206285] (kalman_positioning) StdoutLine: {'line': b'-- Symlinking: /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning/share/kalman_positioning/launch/positioning.launch.py\n'}
+[52.217778] (kalman_positioning) StderrLine: {'line': b'\x1b[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:163 (message):\n'}
+[52.218181] (kalman_positioning) StderrLine: {'line': b"  ament_cmake_symlink_install_files() can't find\n"}
+[52.218478] (kalman_positioning) StderrLine: {'line': b"  '/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning/landmarks.csv'\n"}
+[52.218728] (kalman_positioning) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[52.218935] (kalman_positioning) StderrLine: {'line': b'  ament_cmake_symlink_install_files_0_.cmake:1 (ament_cmake_symlink_install_files)\n'}
+[52.219221] (kalman_positioning) StderrLine: {'line': b'  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:332 (include)\n'}
+[52.219436] (kalman_positioning) StderrLine: {'line': b'  cmake_install.cmake:46 (include)\n'}
+[52.219554] (kalman_positioning) StderrLine: {'line': b'\n'}
+[52.219669] (kalman_positioning) StderrLine: {'line': b'\x1b[0m\n'}
+[52.220851] (kalman_positioning) CommandEnded: {'returncode': 1}
+[52.227040] (kalman_positioning) JobEnded: {'identifier': 'kalman_positioning', 'rc': 1}
+[52.238323] (-) EventReactorShutdown: {}

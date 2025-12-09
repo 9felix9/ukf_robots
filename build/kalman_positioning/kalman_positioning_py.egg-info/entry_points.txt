@@ -1,0 +1,2 @@
+[console_scripts]
+positioning_node = kalman_positioning.positioning_node:main

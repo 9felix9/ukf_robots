@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating kalman_positioning_py.egg-info
+writing kalman_positioning_py.egg-info/PKG-INFO
+writing dependency_links to kalman_positioning_py.egg-info/dependency_links.txt
+writing entry points to kalman_positioning_py.egg-info/entry_points.txt
+writing requirements to kalman_positioning_py.egg-info/requires.txt
+writing top-level names to kalman_positioning_py.egg-info/top_level.txt
+writing manifest file 'kalman_positioning_py.egg-info/SOURCES.txt'
+reading manifest file 'kalman_positioning_py.egg-info/SOURCES.txt'
+writing manifest file 'kalman_positioning_py.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/lib/python3.12/site-packages/kalman-positioning-py.egg-link (link to .)
+Installing positioning_node script to /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/lib/kalman_positioning_py
+
+Installed /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py
+running symlink_data
+creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/ament_index
+creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/ament_index/resource_index
+creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/ament_index/resource_index/packages
+symbolically linking /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/resource/kalman_positioning_py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/ament_index/resource_index/packages
+symbolically linking /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/package.xml -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/kalman_positioning_py
+creating /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/kalman_positioning_py/launch
+symbolically linking /home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning_py/launch/positioning.launch.py -> /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/share/kalman_positioning_py/launch

@@ -1,0 +1,9 @@
+running develop
+Removing /home/felix/Schreibtisch/projects/ros2_homework_1/install/kalman_positioning_py/lib/python3.12/site-packages/kalman-positioning-py.egg-link (link to .)
+running egg_info
+writing ../../build/kalman_positioning_py/kalman_positioning_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/kalman_positioning_py/kalman_positioning_py.egg-info/dependency_links.txt
+writing entry points to ../../build/kalman_positioning_py/kalman_positioning_py.egg-info/entry_points.txt
+writing requirements to ../../build/kalman_positioning_py/kalman_positioning_py.egg-info/requires.txt
+writing top-level names to ../../build/kalman_positioning_py/kalman_positioning_py.egg-info/top_level.txt
+error: package directory 'kalman_positioning_py' does not exist
