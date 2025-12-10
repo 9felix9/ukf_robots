@@ -5,4 +5,3 @@ Summary: Python implementation of Kalman positioning for ROS 2
 Maintainer: Felix Diehl
 Maintainer-email: felix.diehlsw@gmail.com
 License: Apache License 2.0
-License-File: LICENSE

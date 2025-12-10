@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/felix/Schreibtisch/projects/ros2_homework_1/src/kalman_positioning" FILES "/opt/ros/kilted/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/kalman_positioning/environment")

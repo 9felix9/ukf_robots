@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/felix/Schreibtisch/projects/ros2_homework_1/build/kalman_positioning/positioning_node" "TARGETS" "positioning_node" "DESTINATION" "lib/kalman_positioning")
