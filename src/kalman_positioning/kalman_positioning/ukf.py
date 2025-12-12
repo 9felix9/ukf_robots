@@ -5,210 +5,190 @@ np.set_printoptions(suppress=True, precision=6)
 
 class UKF:
     """
-    Unscented Kalman Filter für 5D Roboterzustand:
-        x = [x, y, theta, vx, vy]
+    Unscented Kalman Filter for 2D robot localization.
 
-    Messungen:
-        Landmark-Positionen im Robot-Frame: z = [lx_robot, ly_robot]
+    State vector:
+        x = [pos_x, pos_y, yaw, vel_x, vel_y]
 
-    Diese Version kombiniert:
-        - Deine Struktur
-        - Die korrekten Sigma-Point-Gewichte deines Kommilitonen
-        - Sicheres Cholesky (Fallback auf Jitter)
-        - Korrekte Mittelwertbildung & Kovarianzberechnung
-        - Korrekte Messinnovation
+    Measurement:
+        z = [landmark_dx, landmark_dy]   (expressed in robot frame)
     """
 
-    # UKF-Standardparameter (Van der Merwe)
     def __init__(self, process_noise_xy, process_noise_theta, measurement_noise_xy, num_landmarks):
-        self.nx = 5          # state dimension
-        self.nz = 2          # measurement dimension
+        self.state_dim = 5
+        self.meas_dim = 2
 
-        # Landmarks als Tabelle: [id, x, y]
+        # Landmark table: [id, x_world, y_world]
         self.landmarks = np.zeros((num_landmarks, 3))
 
-        # UKF Parameter
+        # ----------------------------------------------------------------------
+        # UKF Parameters (Van der Merwe)
+        # ----------------------------------------------------------------------
         self.alpha = 1e-3
         self.beta = 2
         self.kappa = 0
 
-        # Sigma scaling
-        self.lambda_ = self.alpha**2 * (self.nx + self.kappa) - self.nx
-        self.gamma = np.sqrt(self.nx + self.lambda_)
+        self.lambda_ = self.alpha**2 * (self.state_dim + self.kappa) - self.state_dim
+        self.gamma = np.sqrt(self.state_dim + self.lambda_)
 
-        # State
-        self.x_ = np.zeros(self.nx)
-        self.P_ = np.eye(self.nx)
+        # State and covariance
+        self.state = np.zeros(self.state_dim)
+        self.cov = np.eye(self.state_dim)
 
-        # Prozessrauschen Q (5×5)
-        self.Q_ = np.diag([
+        # ----------------------------------------------------------------------
+        # Process noise matrix  (mathematically: Q)
+        # ----------------------------------------------------------------------
+        self.process_noise = np.diag([
             process_noise_xy,
             process_noise_xy,
             process_noise_theta,
-            0.0, 0.0
+            0.0,
+            0.0
         ])
 
-        # Messrauschen R (2×2)
-        self.R_ = np.diag([measurement_noise_xy, measurement_noise_xy])
+        # ----------------------------------------------------------------------
+        # Measurement noise matrix  (mathematically: R)
+        # ----------------------------------------------------------------------
+        self.measurement_noise = np.diag([
+            measurement_noise_xy,
+            measurement_noise_xy
+        ])
 
-        # Gewichtung
-        self.Wm = np.zeros(2*self.nx + 1)
-        self.Wc = np.zeros(2*self.nx + 1)
+        # ----------------------------------------------------------------------
+        # Sigma-point weights
+        # ----------------------------------------------------------------------
+        count_sigma = 2*self.state_dim + 1
+        self.w_m = np.full(count_sigma, 1.0 / (2*(self.state_dim + self.lambda_)))
+        self.w_c = self.w_m.copy()
 
-        self.Wm[0] = self.lambda_ / (self.nx + self.lambda_)
-        self.Wc[0] = self.Wm[0] + (1 - self.alpha**2 + self.beta)
+        self.w_m[0] = self.lambda_ / (self.state_dim + self.lambda_)
+        self.w_c[0] = self.w_m[0] + (1 - self.alpha**2 + self.beta)
 
-        wi = 1.0 / (2.0 * (self.nx + self.lambda_))
-        self.Wm[1:] = wi
-        self.Wc[1:] = wi
 
-    # -------------------------------------------------------------
-    # Sigma-Punkte
-    # -------------------------------------------------------------
-    def generate_sigma_points(self, mean, cov):
-        n_sigma = 2*self.nx + 1
-        Chi = np.zeros((self.nx, n_sigma))
+    # ======================================================================
+    # Sigma point generation
+    # ======================================================================
+    def generate_sigma_points(self):
+        n = self.state_dim
+        sigma_count = 2*n + 1
 
-        # Fallback falls Matrix nicht PD ist
+        # Cholesky decomposition with fallback
         try:
-            L = np.linalg.cholesky(cov)
+            L = np.linalg.cholesky(self.cov)
         except np.linalg.LinAlgError:
-            L = np.linalg.cholesky(cov + 1e-6*np.eye(self.nx))
+            L = np.linalg.cholesky(self.cov + 1e-6*np.eye(n))
 
-        Chi[:, 0] = mean.copy()
+        sigma = np.zeros((n, sigma_count))
+        sigma[:, 0] = self.state
 
-        for i in range(self.nx):
+        for i in range(n):
             offset = self.gamma * L[:, i]
-            Chi[:, 1+i] = mean + offset
-            Chi[:, 1+self.nx+i] = mean - offset
+            sigma[:, 1+i] = self.state + offset
+            sigma[:, 1+n+i] = self.state - offset
 
-        return Chi
+        return sigma
 
-    # -------------------------------------------------------------
-    # Prozessmodell
-    # -------------------------------------------------------------
+
+    # ======================================================================
+    # Process model: integrates odometry motion increments
+    # ======================================================================
     def process_model(self, state, dt, dx, dy, dtheta):
-        new_state = state.copy()
+        new = state.copy()
 
-        new_state[0] = state[0] + dx
-        new_state[1] = state[1] + dy
-        new_state[2] = self.normalize_angle(state[2] + dtheta)
+        new[0] += dx
+        new[1] += dy
+        new[2] = self.normalize_angle(state[2] + dtheta)
 
-        new_state[3] = dx/dt
-        new_state[4] = dy/dt
-        return new_state
+        new[3] = dx / dt
+        new[4] = dy / dt
 
-    # -------------------------------------------------------------
-    # Messmodell: Landmark im Robot-Frame
-    # -------------------------------------------------------------
+        return new
+
+
+    # ======================================================================
+    # Measurement model: expected landmark position in robot frame
+    # ======================================================================
     def measurement_model(self, state, landmark_id):
-        # Landmark lookup
-        mask = self.landmarks[:, 0] == landmark_id
-        lm = self.landmarks[mask]
+        lm = self.landmarks[self.landmarks[:, 0] == landmark_id]
 
         if lm.size == 0:
-            raise ValueError(f"Landmark ID {landmark_id} not found in UKF.landmarks!")
+            raise ValueError(f"Landmark {landmark_id} not found")
 
         lx, ly = lm[0, 1], lm[0, 2]
-
-        x, y, theta = state[0], state[1], state[2]
+        x, y, yaw = state[0], state[1], state[2]
 
         dx = lx - x
         dy = ly - y
 
         R = np.array([
-            [ np.cos(theta),  np.sin(theta)],
-            [-np.sin(theta),  np.cos(theta)]
+            [np.cos(yaw),  np.sin(yaw)],
+            [-np.sin(yaw), np.cos(yaw)]
         ])
 
         return R @ np.array([dx, dy])
 
-    # -------------------------------------------------------------
-    # Prediction
-    # -------------------------------------------------------------
+
+    # ======================================================================
+    # Prediction step
+    # ======================================================================
     def predict(self, dt, dx, dy, dtheta):
-        X_sigma = self.generate_sigma_points(self.x_, self.P_)
+        sigma = self.generate_sigma_points()
 
-        X_pred = np.zeros_like(X_sigma)
+        sigma_pred = np.zeros_like(sigma)
+        for i in range(sigma.shape[1]):
+            sigma_pred[:, i] = self.process_model(sigma[:, i], dt, dx, dy, dtheta)
 
-        for i in range(X_sigma.shape[1]):
-            X_pred[:, i] = self.process_model(X_sigma[:, i], dt, dx, dy, dtheta)
+        mean = np.sum(self.w_m * sigma_pred, axis=1)
 
-        # Mittelwert
-        x_pred = np.sum(self.Wm * X_pred, axis=1)
-
-        # Kovarianz
-        P_pred = np.zeros((self.nx, self.nx))
-        for i in range(X_pred.shape[1]):
-            diff = X_pred[:, i] - x_pred
+        cov = np.zeros((self.state_dim, self.state_dim))
+        for i in range(sigma_pred.shape[1]):
+            diff = sigma_pred[:, i] - mean
             diff[2] = self.normalize_angle(diff[2])
-            P_pred += self.Wc[i] * np.outer(diff, diff)
+            cov += self.w_c[i] * np.outer(diff, diff)
 
-        P_pred += self.Q_
+        cov += self.process_noise
 
-        self.x_ = x_pred
-        self.P_ = P_pred
+        self.state = mean
+        self.cov = cov
 
-    # -------------------------------------------------------------
-    # Update für eine Landmark-Messung
-    # -------------------------------------------------------------
-    def update(self, obs_tuple):
-        """
-        obs_tuple = (obs_x_world, obs_y_world, landmark_id)
-        Simulator liefert die Messung im WORLD-Frame.
-        UKF erwartet Messung im ROBOT-Frame.
-        Deshalb transformieren wir zuerst WORLD → ROBOT.
-        """
 
-        obs_x_w, obs_y_w, lm_id = obs_tuple
-        lm_id = int(lm_id)
+    # ======================================================================
+    # Update step
+    # ======================================================================
+    def update(self, obs):
+        obs_x, obs_y, lm_id = obs
+        z_meas = np.array([obs_x, obs_y])
 
-        # --- WORLD → ROBOT Transformation ---
-        robot_x = self.x_[0]
-        robot_y = self.x_[1]
-        robot_theta = self.x_[2]
+        sigma = self.generate_sigma_points()
 
-        dx = obs_x_w - robot_x
-        dy = obs_y_w - robot_y
+        meas_sigma = np.zeros((self.meas_dim, sigma.shape[1]))
+        for i in range(sigma.shape[1]):
+            meas_sigma[:, i] = self.measurement_model(sigma[:, i], lm_id)
 
-        R = np.array([
-            [ np.cos(robot_theta),  np.sin(robot_theta)],
-            [-np.sin(robot_theta),  np.cos(robot_theta)]
-        ])
+        z_pred = np.sum(self.w_m * meas_sigma, axis=1)
 
-        z_meas = R @ np.array([dx, dy])   # Messung jetzt im ROBOT-FRAME
+        S = self.measurement_noise.copy()
+        Tc = np.zeros((self.state_dim, self.meas_dim))
 
-        # --- UKF UPDATE beginnt hier ---
-        X_sigma = self.generate_sigma_points(self.x_, self.P_)
-
-        Z_sigma = np.zeros((self.nz, 2*self.nx + 1))
-        for i in range(Z_sigma.shape[1]):
-            Z_sigma[:, i] = self.measurement_model(X_sigma[:, i], lm_id)
-
-        z_pred = np.sum(self.Wm * Z_sigma, axis=1)
-
-        S = np.zeros((self.nz, self.nz))
-        Tc = np.zeros((self.nx, self.nz))
-
-        for i in range(Z_sigma.shape[1]):
-            z_diff = Z_sigma[:, i] - z_pred
-            x_diff = X_sigma[:, i] - self.x_
+        for i in range(sigma.shape[1]):
+            z_diff = meas_sigma[:, i] - z_pred
+            x_diff = sigma[:, i] - self.state
 
             x_diff[2] = self.normalize_angle(x_diff[2])
 
-            S += self.Wc[i] * np.outer(z_diff, z_diff)
-            Tc += self.Wc[i] * np.outer(x_diff, z_diff)
-
-        S += self.R_
+            S += self.w_c[i] * np.outer(z_diff, z_diff)
+            Tc += self.w_c[i] * np.outer(x_diff, z_diff)
 
         K = Tc @ np.linalg.inv(S)
+
         innovation = z_meas - z_pred
 
-        self.x_ = self.x_ + K @ innovation
-        self.x_[2] = self.normalize_angle(self.x_[2])
+        self.state = self.state + K @ innovation
+        self.state[2] = self.normalize_angle(self.state[2])
 
-        self.P_ = self.P_ - K @ S @ K.T
+        self.cov = self.cov - K @ S @ K.T
 
-    # -------------------------------------------------------------
+
+    # ======================================================================
     def normalize_angle(self, angle):
         return (angle + np.pi) % (2*np.pi) - np.pi
